@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="spectab")
+@Table(name="specialization_tab")
 public class Specialization {
 	
 	@Id
