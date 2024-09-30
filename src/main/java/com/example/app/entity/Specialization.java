@@ -6,10 +6,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name="spectab")
 public class Specialization {
 	
@@ -23,5 +27,8 @@ public class Specialization {
 	
 	@Column(name="spec_name_col")
 	private String specName;
+	
+	@Column(name="spec_note_col")
+	private String specNote;
 
 }
